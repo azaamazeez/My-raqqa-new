@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة إنشاء الحساب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>إنشاء حساب جديد</h2>
+        <form id="signup-form">
+            <label for="first-name">الاسم الأول</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">الاسم الأخير</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="governorate">المحافظة</label>
+            <select id="governorate" name="governorate" required>
+                <option value="damascus">دمشق</option>
+                <option value="aleppo">حلب</option>
+                <option value="homs">حمص</option>
+                <option value="latakia">اللاذقية</option>
+                <option value="tartus">طرطوس</option>
+                <option value="idlib">إدلب</option>
+                <option value="hama">حماه</option>
+                <option value="daraa">درعا</option>
+                <option value="raqqa">الرقة</option>
+                <option value="deir-ez-zor">دير الزور</option>
+                <option value="hasakah">الحسكة</option>
+                <option value="sweida">السويداء</option>
+                <option value="quneitra">القنيطرة</option>
+            </select>
+
+            <input type="submit" value="إنشاء حساب">
+
+            <div class="links">
+                <a href="login.html">لديك حساب بالفعل؟ تسجيل الدخول</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

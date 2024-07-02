@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول أسعار العملات</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gold-button {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .gold-link {
+            color: black; /* تغيير لون النص إلى الأسود */
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .gold-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gold-button">
+            <a href="gold.html" class="gold-link">عرض أسعار الذهب</a>
+        </div>
+
+        <div class="datetime">
+            <h2 id="currentDateTime"></h2>
+            <p>اهلا بكم في منصتنا. شكرا لكم على اختيارنا.</p>
+        </div>
+
+        <script>
+            function displayDateTime() {
+                const now = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+                const formattedDateTime = now.toLocaleDateString('ar-EG', options);
+                document.getElementById('currentDateTime').innerHTML = formattedDateTime;
+            }
+            setInterval(displayDateTime, 1000); // تحديث كل ثانية
+            displayDateTime(); // تحديث أولي
+        </script>
+
+        <h3>العملات مقابل الليرة السورية</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>العملة</th>
+                        <th>البيع</th>
+                        <th>الشراء</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>دولار</td>
+                        <td>15</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>يورو</td>
+                        <td>15</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>ليرة تركية</td>
+                        <td>15</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>ريال سعودي</td>
+                        <td>15</td>
+                        <td>14</td>
+                    </tr>
+                    <!-- إضافة صفوف أخرى للعملات الأخرى إن لزم الأمر -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="links">
+            <a href="home.html">الرجوع إلى الصفحة الرئيسية</a>
+        </div>
+    </div>
+</body>
+</html>

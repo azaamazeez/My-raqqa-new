@@ -1,0 +1,196 @@
+/* إعادة تعيين الأنماط */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* أنماط الحاويات العامة */
+.container, .welcome-container, .login-container, .signup-container, .verification-container, .home-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* أنماط الترويسات */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* أنماط تسميات النماذج */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* أنماط إدخال النماذج */
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* أنماط الأزرار */
+input[type="submit"], button, .gold-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover, .gold-button:hover {
+    background-color: #45a049;
+}
+
+/* أنماط الروابط */
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* أنماط حاوية الجدول */
+.table-container {
+    overflow-x: auto;
+}
+
+/* أنماط الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* أنماط حاوية الأزرار */
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container a {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container a:hover {
+    background-color: #45a049;
+}
+
+/* أنماط حاوية المحافظات */
+.governorates-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* أنماط قائمة المحافظات */
+.governorates-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.governorates-list li {
+    margin: 10px;
+}
+
+.governorates-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.governorates-list a:hover {
+    background-color: #45a049;
+}
+
+/* أنماط زر الذهب */
+.gold-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #008CBA; /* Blue border color */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.gold-button:hover {
+    background-color: #45a049;
+    border-color: #00468c; /* Darker blue on hover */
+}
+
+/* أنماط التاريخ والوقت */
+.datetime {
+    margin-bottom: 20px;
+}

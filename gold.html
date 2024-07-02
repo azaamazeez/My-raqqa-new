@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسعار الذهب</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .rates-button {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .rates-link {
+            color: black; /* لون النص الأسود */
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .rates-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rates-button">
+            <a href="rates.html" class="rates-link">عرض أسعار العملات</a>
+        </div>
+
+        <div class="datetime">
+            <h2 id="currentDateTime"></h2>
+            <p>اهلا بكم في منصتنا. شكرا لكم على اختيارنا.</p>
+        </div>
+
+        <script>
+            function displayDateTime() {
+                const now = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+                const formattedDateTime = now.toLocaleDateString('ar-EG', options);
+                document.getElementById('currentDateTime').innerHTML = formattedDateTime;
+            }
+            setInterval(displayDateTime, 1000); // تحديث كل ثانية
+            displayDateTime(); // تحديث أولي
+        </script>
+
+        <h3>أسعار الذهب</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>الوحدة</th>
+                        <th>الشراء</th>
+                        <th>البيع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>جرام 24</td>
+                        <td>30000</td>
+                        <td>31000</td>
+                    </tr>
+                    <tr>
+                        <td>جرام 22</td>
+                        <td>28000</td>
+                        <td>29000</td>
+                    </tr>
+                    <tr>
+                        <td>جرام 21</td>
+                        <td>27000</td>
+                        <td>28000</td>
+                    </tr>
+                    <tr>
+                        <td>جرام 18</td>
+                        <td>24000</td>
+                        <td>25000</td>
+                    </tr>
+                    <!-- إضافة صفوف أخرى للأسعار إن لزم الأمر -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="links">
+            <a href="home.html">الرجوع إلى الصفحة الرئيسية</a>
+        </div>
+    </div>
+</body>
+</html>
